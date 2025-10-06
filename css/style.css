@@ -11,7 +11,6 @@ body{
 }
 a {
   color: #9A3324;
-  text-decoration: none;
 }
 
 h1{
@@ -94,7 +93,6 @@ ul li a:hover {
 nav ul li a {
   display: block;
   font-weight: bold;
-  text-decoration: none; 
   color: white;
   text-align: center;
   padding: 10px 10px;
