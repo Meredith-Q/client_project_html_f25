@@ -150,24 +150,22 @@ section ul {
     
 }
 .item1 li a,.item2 li a{
-    text-align: center;
     color: white;
-    text-decoration: none; 
 }
+.item2 li a{
+    color: black;
+}
+
 .item2 li{
     background-color: #FFCB05;
     border: 2px solid #FFCB05;
     border-radius: 5px;
     padding: 5px, 5px;
     margin: 5px 5px;
+    color: black;
+    text-decoration: none; 
 
-}
-.item2 li:hover{
-    background-color: #00274C;
-    border: 2px solid #00274C;
-    border-radius: 5px;
-    padding: 5px, 5px;
-    margin: 5px 5px;
+
 }
 
 
@@ -179,14 +177,7 @@ section ul {
     margin: 5px 5px;
     
 }
-.item1 li:hover{
-    background-color: #FFCB05;
-    border: 2px solid #FFCB05;
-    border-radius: 5px;
-    padding: 5px, 5px;
-    margin: 5px 5px;
-    color: black;
-}
+
 .container_r{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
