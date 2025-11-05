@@ -29,7 +29,7 @@
 
 </header>
 
-  <main id="main" class="container">
+  <main id="main">
     <div class = "overview">
       <h2>Your Central Hub for Career Success at UMSI</h2>
       <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
@@ -37,7 +37,7 @@
         Ready to take the next step toward your future career? The UMSI Career Development Resource Hub is your one-stop shop for trusted guidance, practical tools, and the latest information to help you thrive as a student and job-seeker. Whether you are just starting your exploration or getting ready to launch your career, you will find everything you need, organized for you.
       </p>
     </div>
-      <section class="resource">
+      <section class="usage">
         <h2>Why Use This Resource?</h2>
         <ul>
           <li><strong>Everything in One Place:</strong> Stop searching endlessly—quickly access the resources you need for resumes, interviews, networking, mentorship, and more.</li>
@@ -48,7 +48,7 @@
         </ul>
       </section>
       <section class="quickstart">    
-      <div class="item1">
+      <div class="blue">
         <h3>Start Here</h3>
         <ul>
             <li><a href="resume.html">Resumes</a></li>
@@ -57,7 +57,7 @@
             <li><a href="https://docs.google.com/document/d/17iiiupSY-K5QHzd6jtwF2feZfsE90QADjKJkUeldmKM/edit?tab=t.0">Talk to a Career Coach</a></li>
         </ul>
       </div>
-      <div class="item2">
+      <div class="yellow">
         <h3>Most Popular Resources</h3>
         <ul>
           <li><a href="https://www.si.umich.edu/student-experience/career-outcomes" target="_blank">UMSI Career Outcome</a></li>
@@ -80,10 +80,14 @@
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
     </main>
     <footer>
+      <p class = "copyright">© Copyrights <span id="year"></span> by Michigan University. All rights reserved.</p>
       <p class = "info-title"> Find more information at:</p>
       <p class = "info"> <a href= "https://umich.edu/"> University of Michigan</a> | <a href = "https://www.si.umich.edu/">University of Michigan School of Information</a> </p>
       <p class = "contact-title"> Contact us:</p>
       <p class="contact"> <a href="umsi.careers@umich.edu">Send Email</a> | <a href="https://umich.instructure.com/courses/137916">Join the courses</a></p>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
