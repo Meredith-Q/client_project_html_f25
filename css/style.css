@@ -55,22 +55,12 @@ img {
 
 
 nav{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #ddd;
-  padding: 10px 0; 
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo{
-  grid-column: 1 / 1;
-  grid-column: 1 / 2;
-}
 
 nav ul {
-  grid-column: 2 / 4;
-  grid-row: 1 / 2;
-  overflow: hidden;
   background-color: #00274C;
 }
 
@@ -85,7 +75,7 @@ nav ul li a {
   font-weight: bold;
   color: white;
   text-align: center;
-  padding: 10px 10px;
+  padding: 15px 10px;
 }
 
 .overview {
@@ -161,10 +151,10 @@ section ul {
     text-align: center;
 }
 .itemA, .itemC{
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
 }
 .itemB, .itemD {
-    grid-column: 2 / 5;
+    grid-column: 1 / -1;
 }
 
 .itemA{
@@ -193,17 +183,17 @@ section ul {
     overflow: scroll;
 }
 .resource {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-row: 2 / 2;
 
 }
 
 .quickstart {
-    grid-column: 2 / 5;
+    grid-column: 1 / -1;
     grid-row: 3 / 3;
 }
 .connect {
-    grid-column: 1 / span 5;
+    grid-column: 1 / -1;
     grid-row: 4 / 4;
 }
 footer {
@@ -234,4 +224,29 @@ iframe {
   width: 100%;
   height: auto;
   padding: 10px;
+}
+@media (min-width: 600px) {
+  /* … */
+  img {
+    width: 30%;
+  }
+  .logo{
+    display: flex;
+    width: 30%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+  }
+  nav ul{
+    display: flex;
+    padding: 0;
+    gap: 10px;
+
+  }
+  nav ul li {
+  float: right;
+  }
 }
