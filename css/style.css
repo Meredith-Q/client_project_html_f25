@@ -141,22 +141,22 @@ section ul {
   grid-column: 1 / -1;
 }
 
-.step, .rubric, .skill, .faq, .usage, .quickstart, .connect, .alumni, .plan, .careerfair, .step, .process, .behavioral, .tech, .negotiation {
+.step, .rubric, .skill, .faq, .usage, .quickstart, .connect, .alumni, .plan, .careerfair, .step, .process, .behavioral, .tech, .negotiation, .final {
     grid-column: 1 / -1;
 }
 
-.step, .usage， .alumni, .process{
+.step, .alumni, .process, .step{
   grid-row: 2 / 2;
 }
 
-.rubric, .quickstart, .plan, .behavioral{
+.quickstart, .plan, .behavioral, .rubric{
   grid-row: 3 / 3;
 }
 
 .skill, .connect, .careerfair, .tech{
   grid-row: 4/ 4;
 }
-.faq, .step, .negotiation{
+.faq, .negotiation, .final{
   grid-row: 5/ 5;
 }
 .plan > img{
@@ -187,17 +187,14 @@ footer {
 .info-title {
   grid-column: 1 / 3;
   grid-row: 2 / 2;
-
 }
 .info{
   grid-column: 1 / 3;
   grid-row: 3 / 3;
-
 }
 .contact-title{
   grid-column: 3 / 5;
   grid-row: 2 / 2;
-
 }
 .contact{
   grid-column: 3 / 5;
@@ -217,6 +214,7 @@ iframe {
   color: white;
   font-weight: bold;
 }
+
 @media (min-width: 600px) {
   /* … */
   img {
@@ -243,5 +241,25 @@ iframe {
   iframe {
     height: 100%;
     padding: 10px;
+  }
+  .usage{
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+  }
+  .quickstart{
+    grid-column: 3 / 5;
+    grid-row: 2 / 2;
+  }
+  .skill{
+      grid-row: 4 / 4;
+
+  }
+  .rubric{
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+  }
+  .faq{
+    grid-column: 3 / 5;
+    grid-row: 3 / 3;
   }
 }
