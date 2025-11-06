@@ -16,14 +16,17 @@
     </div>
     <header>
         <nav>
+            <label for="toggle" id="ham_icon" onclick="ham_click()">
             <div class="logo">
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
             </div>
-            <ul>
-            <li><a href = "index.html">Home</a></li>
+            </label>
+            
+            <ul id="nav-links">
+            <li><a class="active" href = "index.html">Home</a></li>
             <li><a href = "resume.html">Resumes</a></li>
             <li><a href ="networking&connections.html">Networking & Connections</a></li>
-            <li><a class="active" href ="interview.html">Interview</a></li>
+            <li><a href ="interview.html">Interview</a></li>
             </ul>
         </nav>
         <h1>Interview</h1>
@@ -35,12 +38,8 @@
             <p> The job interview is one of the most crucial steps in your career search process. It is the organization’s opportunity to determine mutual fit. This guide brings you up to date best practices and step-by-step instructions for mastering the conversation. There are three critical questions, often referred to as “the big three,” that you need to be able to address in preparation:</p>
         </div>   
         <section class="process"> 
-            <ul>
-                <li><strong>Why YOU? </strong>Articulating a response to “Tell Me About Yourself”</li>
-                <li><strong>WHY THIS POSITION? </strong>Understanding the role demands through the job description and online research</li>
-                <li><strong>WHY THIS ORGANIZATION? </strong>Understanding the organization and the industry</li>
-            </ul>
-            <p> A typical interview process includes several stages:</p>
+            <h2> A typical interview process includes several stages:</h2>
+            
             <ol>
                 <li>Introduction</li>
                 <li>Interviewer background</li>
@@ -49,7 +48,7 @@
                 <li>The close (timeline & next steps)</li>
                 <li>Thank you/follow-up </li>
             </ol>
-            <img src="images/MCOMMONS-Parents&FamilyTailgate-19.jpg" alt="A group of student practice interview.">
+            
             <p> Feel empowered to ask thoughtful questions that will help you determine if this is somewhere you’d like to work!</p>
             <ul>
                 <li><a href ="https://docs.google.com/document/d/1PXqYuV0lnPBjDe0yAbAhrhRYUEt4mw-dfYhOBvHF5aM/edit?usp=sharing">CDO Interview Protocol</a></li>
@@ -57,6 +56,7 @@
                 <li><a href = "https://docs.google.com/spreadsheets/d/1eQ4OqqxPaah5yOv0kMkLxwrOnKJPVyBjfC79bBfaYTM/edit#gid=1759134258"> Questions to Identify Inclusive Companies </a></li>
                 <li>Use sites like <a href = "https://www.glassdoor.com/index.htm">Glassdoor</a>, <a href = "https://www.chezie.co/">Chezie</a> and more to see if employee experiences match what they share</li>
             </ul>
+            <img src="images/MCOMMONS-Parents&FamilyTailgate-19.jpg" alt="A group of student practice interview.">
         </section>  
 
         <section class="behavioral">
@@ -111,4 +111,13 @@
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 </body>
+<script>
+    function ham_click() {
+        var links = document.getElementById('nav-links');
+        var lis = document.getElementsByTagName('li');
+        if(links.style.display == "none") {
+            links.style.display = "block";
+        }else links.style.display = "none";
+    }
+</script>
 </html>

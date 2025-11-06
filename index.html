@@ -14,10 +14,13 @@
   </div>
 <header>
   <nav>
-    <div class="logo">
-      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-    </div>
-    <ul>
+    <label for="toggle" id="ham_icon" onclick="ham_click()">
+      <div class="logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      </div>
+    </label>
+    
+    <ul id="nav-links">
       <li><a class="active" href = "index.html">Home</a></li>
       <li><a href = "resume.html">Resumes</a></li>
       <li><a href ="networking&connections.html">Networking & Connections</a></li>
@@ -74,6 +77,14 @@
         The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides.
         <a href="https://www.si.umich.edu/programs/career-development-office">Visit the CDO website</a> to learn more, schedule a coaching session, or just say hello.
       </p>
+      <h3>Subscribe our email:</h3>
+      <form>
+        <label for="uname">Unique Name:</label><br>
+        <input type="text" id="uname" name="uname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
     </section>
        
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
@@ -90,4 +101,14 @@
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 </body>
+<script>
+      function ham_click() {
+        var links = document.getElementById('nav-links');
+        var lis = document.getElementsByTagName('li');
+        if(links.style.display == "none") {
+            links.style.display = "block";
+        }else links.style.display = "none";
+    }
+</script>
+
 </html>

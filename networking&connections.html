@@ -14,17 +14,20 @@
         <a href = "#main">Skip to Main Content</a>
     </div>
     <header>
-    <nav>
-        <div class="logo">
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        </div>
-        <ul>
-        <li><a href = "index.html">Home</a></li>
-        <li><a href = "resume.html">Resumes</a></li>
-        <li><a class="active" href ="networking&connections.html">Networking & Connections</a></li>
-        <li><a href ="interview.html">Interview</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <label for="toggle" id="ham_icon" onclick="ham_click()">
+            <div class="logo">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </div>
+            </label>
+            
+            <ul id="nav-links">
+            <li><a class="active" href = "index.html">Home</a></li>
+            <li><a href = "resume.html">Resumes</a></li>
+            <li><a href ="networking&connections.html">Networking & Connections</a></li>
+            <li><a href ="interview.html">Interview</a></li>
+            </ul>
+        </nav>
     <h1>Networking & Connections</h1>
 
     </header>
@@ -82,10 +85,8 @@
 
         </section>  
 
-
         <section class="plan">
             <h2>Planning an Informational Interview</h2>
-            <img src="images/MCOMMONS-WinterSemester2025-01.jpg" alt="Two person are communicating in a causal environment.">
             <p>An informational interview is an informal conversation with someone working in an area that interests you who will give you information and advice.</p>
             <h3> Things need to prepare:</h3>
             <ul>
@@ -173,14 +174,6 @@
 
                 </ul>
         </section>
-
-        <section class="final">
-            <h2> Next Steps:</h2>
-            <ul>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href ="Interview.html">Interview</a></li>
-            </ul>
-        </section>
         
     </main>
 
@@ -195,4 +188,13 @@
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 </body>
+<script>
+    function ham_click() {
+        var links = document.getElementById('nav-links');
+        var lis = document.getElementsByTagName('li');
+        if(links.style.display == "none") {
+            links.style.display = "block";
+        }else links.style.display = "none";
+    }
+</script>
 </html>
