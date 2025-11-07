@@ -165,7 +165,7 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
-nav button {
+button {
 background: none;
 border: none;
 cursor: pointer;
@@ -206,7 +206,6 @@ iframe {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
-
 
 form {
   border-radius: 5px;
@@ -358,5 +357,4 @@ input[type=submit] {
     grid-column: 3 / 5;
     grid-row: 3 / 5;
   }
-
 }
