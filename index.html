@@ -16,7 +16,7 @@
   
   <nav>
     <button onclick="ham_click()">
-      <img class="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" tabindex="0"> 
+      <img class="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"> 
     </button>
     <ul id="nav-links">
       <li><a class="active" href = "index.html">Home</a></li>
@@ -97,9 +97,6 @@
     </footer>
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
-</body>
-<script>
       function ham_click() {
         var links = document.getElementById('nav-links');
         var lis = document.getElementsByTagName('li');
@@ -107,6 +104,7 @@
             links.style.display = "block";
         }else links.style.display = "none";
     }
-</script>
+    </script>
+</body>
 
 </html>
