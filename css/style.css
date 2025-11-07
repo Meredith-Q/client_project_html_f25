@@ -198,14 +198,15 @@ iframe {
   padding: 10px;
 }
 .p404 {
-  background-color: gray;
+  background-color: rgb(207, 207, 207);
   padding: 222px 30px;
 }
 .p404 > p {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
+
 
 form {
   border-radius: 5px;
@@ -357,4 +358,5 @@ input[type=submit] {
     grid-column: 3 / 5;
     grid-row: 3 / 5;
   }
+
 }
