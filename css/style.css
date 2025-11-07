@@ -231,6 +231,10 @@ input[type=submit] {
 }
 
 @media (min-width: 600px) {
+  *:focus {
+    outline: 3px solid #9A3324;
+    outline-offset: 2px;
+  }
   section {
     padding: 10px 10px;
 
